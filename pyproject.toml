@@ -1,15 +1,16 @@
 [tool.poetry]
+authors = ["Aleksey Dalekin <alex@nbs.vc>"]
+description = ""
 name = "fastapi-utils"
 version = "0.1.0"
-description = ""
-authors = ["Aleksey Dalekin <alex@nbs.vc>"]
 
 [tool.poetry.dependencies]
-python = "^3.7"
 fastapi = ">=0.68.1"
+python = "^3.7"
+timezones = {git = "https://github.com/adalekin/timezones.git", branch = "master"}
 
 [tool.poetry.dev-dependencies]
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+requires = ["poetry-core>=1.0.0"]
